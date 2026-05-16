@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Activities 1 to 8</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 30px;
+            background-color: #f9f6f0;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #4a3f35;
+        }
+        .activity-card {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-left: 5px solid #af8f6f;
+        }
+        button {
+            background-color: #af8f6f;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            margin: 5px 2px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background-color: #8c7156;
+        }
+        #example {
+            background-color: #f5efe6;
+            padding: 15px;
+            border-radius: 4px;
+            border: 1px dashed #dac8b2;
+        }
+        span {
+            color: #b85c5c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript Laboratory Portfolio (Acts 1-8)</h1>
+    <p>Open the browser developer tools (F12) to view console outputs.</p>
+    
+    <hr>
+
+    <div class="activity-card">
+        <h2>Act 1: Text Editor – Browser - DevTools</h2>
+        <p>Check your browser DevTools Console to see the automatically executed "Hello World" log[cite: 31].</p>
+    </div>
+
+    <div class="activity-card">
+        <h2>Act 2: document.getElementById()</h2>
+        <h3 id="text">Original HTML Text</h3>
+        <button onclick="runAct2()">Run Act 2 (Modify Text)</button>
+    </div>
+
+    <div class="activity-card">
+        <h2>Act 3: External JavaScript Dialog</h2>
+        <button onclick="runAct3()">Run Act 3 (Trigger Alert Popup)</button>
+    </div>
+
+    <div class="activity-card">
+        <h2>Act 4 & 5: Variable Declarations (Implicit vs Let)</h2>
+        <p>Target Display Area:</p>
+        <div id="variable-display" style="font-weight: bold; font-size: 1.2em; color: #af8f6f; margin-bottom: 10px;">[Empty]</div>
+        <button onclick="runAct4()">Run Act 4 (Implicit Declaration)</button>
+        <button onclick="runAct5()">Run Act 5 (Modern Let Declaration)</button>
+    </div>
+
+    <div class="activity-card">
+        <h2>Act 6: window.alert() Natively</h2>
+        <button onclick="runAct6()">Run Act 6 (Window Alert)</button>
+    </div>
+
+    <div class="activity-card">
+        <h2>Act 7: document.write() Experiment</h2>
+        <p>⚠️ <em>Warning: Calling document.write() after the page loads will wipe out this entire workspace layout[cite: 144, 145]!</em></p>
+        <button onclick="runAct7()" style="background-color: #c94a4a;">Run Act 7 (Destructive Write)</button>
+    </div>
+
+    <div class="activity-card">
+        <h2>Act 8: innerText, innerHTML, & textContent Comparison</h2>
+        
+        <p id="example"> 
+            This paragraph element has excess spacing and has <span>a span element</span> inside.
+        </p>
+
+        <button onclick="getInnerText()">Get innerText</button>
+        <button onclick="getInnerHTML()">Get innerHTML</button>
+        <button onclick="getTextContent()">Get textContent</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
